@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:"http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Member List</title>
+</head>
+<body>
+<br>
+<h1>사용자 목록 보기</h1>
+<table border=1>
+	<tr>
+		<td>&emsp;온오프상태&emsp;</td><td>&emsp;온도&emsp;</td>
+	</tr>
+	<tbody>
+	
+		<tr th:each="list:${list}">
+			<td><span th:text="${list.status}"></span></td>
+			<td><span th:text="${list.temp}"></span></td>
+		</tr>
+	
+	</tbody>
+
+</table>
+
+
+
+
+
+</body>
+</html>

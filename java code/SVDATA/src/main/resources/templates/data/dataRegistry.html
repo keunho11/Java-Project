@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:"http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Member Registry</title>
+
+<script>
+function register(){
+	
+	document.dataRegistry.action = "/data/dataRegistry";
+	document.dataRegistry.submit();
+	
+}
+</script>
+
+</head>
+<body>
+<br>
+<h1>사용자 정보 입력</h1>
+<form name="dataRegistry" method="post" onsubmit="register()">
+	온오프상태 : <input type="text" name="status"><br>
+	온&nbsp;&nbsp;&nbsp;도 : <input type="text" name="temp"><br>
+	&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="button" value="등록" onclick="register()">
+</form>
+</body>
+</html>
